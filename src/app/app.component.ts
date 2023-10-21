@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'L2DSI1';
   name="Badi";
+  
   constructor(){
 
   }
