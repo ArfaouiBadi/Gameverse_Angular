@@ -14,7 +14,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MyCartComponent } from './components/my-cart/my-cart.component';
 import { UsersComponentComponent } from './components/users-component/users-component.component';
 import { AccueilComponentComponent } from './components/accueil-component/accueil-component.component';
-
+import { CalculetteComponent } from './components/calculette/CalculetteComponent';
+import { FormTestComponent } from './components/form-test/form-test.component';
 const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
@@ -22,6 +23,8 @@ const routes: Routes = [
   {path:'myCart',component:MyCartComponent},
   {path:'User',component:UsersComponentComponent},
   {path:'Acceuil',component:MainContainerComponent},
+  {path:'calculette',component:CalculetteComponent},
+  {path:'form',component:FormTestComponent}
 ];
 
 @NgModule({

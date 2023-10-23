@@ -48,7 +48,7 @@
         </div> {{ prenom.className}}
         <div> <button [disabled]=!monForm.valid> ajouter </button> </div>
         </form>
-    -->
+    --><!--
     <form #monForm=ngForm (ngSubmit)=ajouterPersonne()>
         <div>
         Nom : <input type=text name=nom [(ngModel)]=personne.nom required #nom="ngModel">
@@ -63,5 +63,20 @@
                 {{item.nom +" "+item.prenom}}
             </li>
         </ul>
-    </form>
+    </form>-->
+
+
+    <!--partie form controll -->
+
+    <label>
+        Nom:
+        <input type="text" [formControl]="name">
+        </label>
+        <p>
+        Value: {{ name.value }}
+        </p>
+        <p>
+        <button (click)="updateName()">Update Nom
+        </button>{{name.value}} </p>
+    
         

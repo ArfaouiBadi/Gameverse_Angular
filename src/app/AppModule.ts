@@ -16,7 +16,8 @@ import { MyCartComponent } from './components/my-cart/my-cart.component';
 import { UsersComponentComponent } from './components/users-component/users-component.component';
 import { AccueilComponentComponent } from './components/accueil-component/accueil-component.component';
 import { FormTestComponent } from './components/form-test/form-test.component';
-
+import { CalculetteComponent } from './components/calculette/CalculetteComponent';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,11 +36,13 @@ import { FormTestComponent } from './components/form-test/form-test.component';
     UsersComponentComponent,
     AccueilComponentComponent,
     FormTestComponent,
+    CalculetteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
