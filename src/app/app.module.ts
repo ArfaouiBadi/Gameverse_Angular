@@ -14,16 +14,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MyCartComponent } from './components/my-cart/my-cart.component';
 import { UsersComponentComponent } from './components/users-component/users-component.component';
 import { AccueilComponentComponent } from './components/accueil-component/accueil-component.component';
-import { Routes } from '@angular/router';
+import { FormTestComponent } from './components/form-test/form-test.component';
 
-const routes: Routes = [
-  {path:'login',component:LoginComponent},
-  {path:'signup',component:SignupComponent},
-  {path:'dashboard',component:DashboardComponent},
-  {path:'myCart',component:MyCartComponent},
-  {path:'User',component:UsersComponentComponent},
-  {path:'Acceuil',component:MainContainerComponent},
-]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +32,7 @@ const routes: Routes = [
     MyCartComponent,
     UsersComponentComponent,
     AccueilComponentComponent,
+    FormTestComponent,
     
     
   ],
