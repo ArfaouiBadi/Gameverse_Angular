@@ -1,22 +1,25 @@
 import { Component,OnInit } from '@angular/core';
 import { Personne } from 'src/app/interfaces/personne';
-import { FormControl } from '@angular/forms';
+import { FormControl,FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-form-test',
   templateUrl: './form-test.component.html',
   styleUrls: ['./form-test.component.css']
 })
-export class FormTestComponent implements OnInit{
-  constructor() { }
+export class FormTestComponent implements OnInit {
   ngOnInit(): void {
+      
+  }
+  personneForm = new FormGroup({
+  id: new FormControl(""),
+  nom: new FormControl(""),
+  prenom: new FormControl("")
+  });
 
-   }
-
-  name = new FormControl('');
-  updateName() {
-    this.name.setValue("Tounsi"); }
-    
- 
+  afficherTout(): void {
+  console.log(this.personneForm.value);
+  }
+  }
   
   /*
   personnes: Array<Personne> = []; 
@@ -29,6 +32,4 @@ export class FormTestComponent implements OnInit{
   this.personne.nom = ""; 
   this.personne.prenom = "";
   console.log(this.personnes);*/
-}
-
 
