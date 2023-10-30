@@ -37,6 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AccueilComponentComponent,
     FormTestComponent,
     CalculetteComponent,
+    
   ],
   imports: [
     BrowserModule,
