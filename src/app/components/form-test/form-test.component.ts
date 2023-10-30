@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { Personne } from 'src/app/interfaces/personne';
-import { FormControl,FormGroup } from '@angular/forms';
+import { FormControl,FormGroup,FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-form-test',
   templateUrl: './form-test.component.html',
@@ -10,15 +10,11 @@ export class FormTestComponent implements OnInit {
   ngOnInit(): void {
       
   }
-  personneForm = new FormGroup({
-  id: new FormControl(""),
-  nom: new FormControl(""),
-  prenom: new FormControl("")
-  });
 
-  afficherTout(): void {
-  console.log(this.personneForm.value);
-  }
+  // ...
+
+  constructor(private fb: FormBuilder) { }
+  
   }
   
   /*
