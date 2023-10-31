@@ -19,6 +19,7 @@ import { CalculetteComponent } from './components/calculette/CalculetteComponent
 import { ReactiveFormsModule } from '@angular/forms';
 import { FirstComponent } from './components/first/first.component';
 import { SecondComponent } from './components/second/second.component';
+import { PersonneServiceTestComponent } from './components/personne-service-test/personne-service-test.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { SecondComponent } from './components/second/second.component';
     CalculetteComponent,
     FirstComponent,
     SecondComponent,
+    PersonneServiceTestComponent
     
   ],
   imports: [
