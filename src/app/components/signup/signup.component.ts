@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Validators, FormBuilder, EmailValidator } from "@angular/forms";
-
 interface Personne {
   userName: string;
   nom: string;
