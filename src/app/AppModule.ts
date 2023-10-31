@@ -12,7 +12,6 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StoreComponent } from './components/store/store.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { MyCartComponent } from './components/my-cart/my-cart.component';
 import { UsersComponentComponent } from './components/users-component/users-component.component';
 import { AccueilComponentComponent } from './components/accueil-component/accueil-component.component';
 import { FormTestComponent } from './components/form-test/form-test.component';
@@ -32,7 +31,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     SignupComponent,
     StoreComponent,
     DashboardComponent,
-    MyCartComponent,
     UsersComponentComponent,
     AccueilComponentComponent,
     FormTestComponent,

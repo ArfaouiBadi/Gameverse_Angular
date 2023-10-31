@@ -27,7 +27,7 @@ export class SignupComponent {
   constructor(private fb: FormBuilder) { }
   ngOnInit(): void { }
   ajouterPersonne(): void {
-    this.personnes.push({ ...this.personneForm.value } as Personne);
+    this.personnes.push({ ...this.personneForm.value } as Personne)
     console.log(this.personnes);
     this.personneForm.reset();
   }
