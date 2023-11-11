@@ -22,7 +22,8 @@ const routes: Routes = [
   {path:'User',component:UsersComponentComponent},
   {path:'Acceuil',component:MainContainerComponent},
   {path:'calculette',component:CalculetteComponent},
-  {path:'form',component:FormTestComponent}
+  {path:'form',component:FormTestComponent},
+  {path:'home',component:AccueilComponentComponent}
 ];
 
 @NgModule({

@@ -21,6 +21,9 @@ import { FirstComponent } from './components/first/first.component';
 import { SecondComponent } from './components/second/second.component';
 import { PersonneServiceTestComponent } from './components/personne-service-test/personne-service-test.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LeftAsideComponent } from './components/left-aside/left-aside.component';
+import { RightAsideComponent } from './components/right-aside/right-aside.component';
+import { MidAsidComponent } from './components/mid-asid/mid-asid.component';
 
 
 @NgModule({
@@ -41,7 +44,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     CalculetteComponent,
     FirstComponent,
     SecondComponent,
-    PersonneServiceTestComponent
+    PersonneServiceTestComponent,
+    LeftAsideComponent,
+    RightAsideComponent,
+    MidAsidComponent,
     
   ],
   imports: [
