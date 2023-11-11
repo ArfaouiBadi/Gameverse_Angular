@@ -13,7 +13,21 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "userName":"Badi",
+      "nom":"Badi",
+      "prenom":"arfaoui",
+      "password":"1234",
+      "email":"Badi@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "other"
+    },
+    {
+      "id": 3,
+      "name": "other2"
+    }
+  ]
 }

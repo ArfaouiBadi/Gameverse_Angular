@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Validators, FormBuilder, EmailValidator } from "@angular/forms";
+import { PersonneService } from 'src/app/services/personne.service';
 interface Personne {
   userName: string;
   nom: string;
@@ -23,10 +24,17 @@ export class SignupComponent {
     password: ["", Validators.required],
   });
 
-  constructor(private fb: FormBuilder) { }
-  ngOnInit(): void { }
+  constructor(private fb: FormBuilder,private personneService:PersonneService) { }
+  ngOnInit(): void {
+    this.getPersonneData();
+  }
+  getPersonneData(): void {
+    this.personneService.getAll();
+    console.log(this.personnes);
+    }
   ajouterPersonne(): void {
     this.personnes.push({ ...this.personneForm.value } as Personne)
+    PersonneService.addPersonne({ ...this.personneForm.value } as Personne);
     console.log(this.personnes);
     this.personneForm.reset();
   }

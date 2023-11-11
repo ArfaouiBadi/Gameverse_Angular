@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FirstComponent } from './components/first/first.component';
 import { SecondComponent } from './components/second/second.component';
 import { PersonneServiceTestComponent } from './components/personne-service-test/personne-service-test.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { PersonneServiceTestComponent } from './components/personne-service-test
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
