@@ -15,6 +15,7 @@ import { UsersComponentComponent } from './components/users-component/users-comp
 import { AccueilComponentComponent } from './components/accueil-component/accueil-component.component';
 import { CalculetteComponent } from './components/calculette/CalculetteComponent';
 import { FormTestComponent } from './components/form-test/form-test.component';
+import { homeGuardGuard } from './guard/home-guard.guard';
 const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:'Acceuil',component:MainContainerComponent},
   {path:'calculette',component:CalculetteComponent},
   {path:'form',component:FormTestComponent},
-  {path:'home',component:AccueilComponentComponent}
+  {path:'home',component:AccueilComponentComponent,canActivate : [homeGuardGuard]},
+  
 ];
 
 @NgModule({
