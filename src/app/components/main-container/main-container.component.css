@@ -1,8 +1,105 @@
 .main_container{
     background-color: #222529;
     color: white;
-    height: 100vh;
+    height: max-content;
     width: 80%;
     margin: auto;
     border-radius: 24px;
+    flex-wrap: wrap;
 }
+.Wrapper{
+    display: flex;
+    
+}
+.main_container-text{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: #343a40;
+    margin: 50px 10px 50px 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main_container-card{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #343a40;
+    margin: 50px  50px 50px 10px;
+    border-radius: 25px;
+    height: max-content;
+}
+.main-text{
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 50px;
+    
+}
+.main-text span{
+    font-style: italic;
+}
+.description-text{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.search{
+    margin-top: 50px;
+
+}
+.search input{
+    width: 60%;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    border: none; /* Remove the border */
+}
+input:focus{
+    outline: none;
+}
+.description-text1{
+    font-weight: 200;
+    margin-top: 20px;
+    
+    
+}
+.description-text span{
+    font-style: italic;
+    text-decoration: underline;
+}
+.search button{
+    
+    width:max-content;
+    font-weight: 200;
+    font-style: italic;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: -40px;
+    border: none;
+    background-color: #343a40;
+    color: white;
+    border: white 1px solid;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.search button:hover{
+    background-color: white;
+    border: #484f57 1px solid;
+    color: #484f57;
+}
+.main_container-img{
+    width: 100%;
+    
+    border-radius: 25px;
+    
+}
+.main-container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
