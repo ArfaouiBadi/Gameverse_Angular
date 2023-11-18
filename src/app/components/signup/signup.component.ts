@@ -26,7 +26,7 @@ export class SignupComponent {
     }
   ajouterPersonne(): void {
     this.personnes.push({ ...this.personneForm.value } as Personne)
-    PersonneService.addPersonne({ ...this.personneForm.value } as Personne);
+    this.personneService.addPersonne({ ...this.personneForm.value } as Personne);
     console.log(this.personnes);
     this.personneForm.reset();
   }
