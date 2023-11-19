@@ -24,6 +24,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LeftAsideComponent } from './components/left-aside/left-aside.component';
 import { RightAsideComponent } from './components/right-aside/right-aside.component';
 import { MidAsidComponent } from './components/mid-asid/mid-asid.component';
+import { MostPlayedGamesComponent } from './components/most-played-games/most-played-games.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { MidAsidComponent } from './components/mid-asid/mid-asid.component';
     LeftAsideComponent,
     RightAsideComponent,
     MidAsidComponent,
+    MostPlayedGamesComponent,
     
   ],
   imports: [
