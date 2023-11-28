@@ -16,6 +16,8 @@ import { AccueilComponentComponent } from './components/accueil-component/accuei
 import { CalculetteComponent } from './components/calculette/CalculetteComponent';
 import { FormTestComponent } from './components/form-test/form-test.component';
 import { homeGuardGuard } from './guard/home-guard.guard';
+import { AddGameComponent } from './components/add-game/add-game.component';
+import { ModifierGameComponent } from './components/modifier-game/modifier-game.component';
 const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
@@ -25,7 +27,8 @@ const routes: Routes = [
   {path:'calculette',component:CalculetteComponent},
   {path:'form',component:FormTestComponent},
   {path:'home',component:AccueilComponentComponent,canActivate : [homeGuardGuard]},
-  
+  {path:'addGame',component:AddGameComponent},
+  {path:'modifierGame',component:ModifierGameComponent},
 ];
 
 @NgModule({

@@ -25,6 +25,9 @@ import { LeftAsideComponent } from './components/left-aside/left-aside.component
 import { RightAsideComponent } from './components/right-aside/right-aside.component';
 import { MidAsidComponent } from './components/mid-asid/mid-asid.component';
 import { MostPlayedGamesComponent } from './components/most-played-games/most-played-games.component';
+import { AllGamesComponent } from './components/all-games/all-games.component';
+import { AddGameComponent } from './components/add-game/add-game.component';
+import { ModifierGameComponent } from './components/modifier-game/modifier-game.component';
 
 
 @NgModule({
@@ -50,7 +53,9 @@ import { MostPlayedGamesComponent } from './components/most-played-games/most-pl
     RightAsideComponent,
     MidAsidComponent,
     MostPlayedGamesComponent,
-    
+    AllGamesComponent,
+    AddGameComponent,
+    ModifierGameComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +63,7 @@ import { MostPlayedGamesComponent } from './components/most-played-games/most-pl
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,36 @@
+<div class="section most-played">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            
+            <h1>All Games</h1>
+          </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="col-lg-6">
+                <div class="main-button">
+                   <a href="/addGame"> <button class="btn btn-success" >Add Game</button></a>
+                   <a href="/modifierGame"> <button class="btn btn-success" >modifier Game</button></a>
+                </div>
+              </div>
+        </div>
+        <!--items-->
+       
+        <div class="col-lg-2 col-md-6 col-sm-6" *ngFor="let game of games">
+          <div class="item">
+            <div class="thumb">
+              <img src="../../../assets/top-game-06.jpg" alt="">
+            </div>
+            <div class="down-content">
+                <span class="category">{{game.genre}}</span>
+                <span class="category">{{game.rating}}</span>
+                <h4>{{game.name}}</h4>
+                <a  class="deleteButton" (click)="handelDelete(game)">Delete</a>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

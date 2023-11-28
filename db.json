@@ -6,29 +6,48 @@
       "author": "typicode"
     }
   ],
-  "comments": [
+  "games": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "valorant",
+      "genre": "shooter",
+      "description": "valorant is a free to play 5v5, character-based tactical shooter. the game operates on an economy-round, objective-based, first-to-13 competitive format where you select a unique agent to play for the entirety of the match.",
+      "online": true,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "fortnite",
+      "description": "shooter game",
+      "rating": "4.6",
+      "genre": "shooter",
+      "online": "true"
     }
   ],
   "users": [
     {
-      "userName":"Badi",
-      "nom":"Badi",
-      "prenom":"arfaoui",
-      "password":"1234",
-      "email":"Badi@gmail.com"
+      "id": 1,
+      "userName": "Badi",
+      "nom": "Badi",
+      "prenom": "arfaoui",
+      "password": "1234",
+      "email": "Badi@gmail.com"
     },
     {
-      "userName":"Badi",
-      "nom":"Badi",
-      "prenom":"arfaoui",
-      "password":"1234",
-      "email":"arfaouibadi19@gmail.com"
+      "id": 2,
+      "userName": "Badi",
+      "nom": "Badi",
+      "prenom": "arfaoui",
+      "password": "1234",
+      "email": "arfaouibadi19@gmail.com"
+    },
+    {
+      "id": 3,
+      "userName": "3",
+      "nom": "aa",
+      "prenom": "aa",
+      "email": "aa",
+      "password": "aa"
     }
-    
-    
   ]
 }

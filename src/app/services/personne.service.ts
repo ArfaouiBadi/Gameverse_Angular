@@ -11,25 +11,20 @@ export class PersonneService {
   private _apiUrl: string = 'http://localhost:3000/users';
   constructor(private http: HttpClient ) {}
   getAll(): Observable<Personne[]> {
-    
     return this.http.get<Personne[]>(this._apiUrl);
   }
   
   addPersonne(u: Personne): Observable<Personne> {
-    console.log(u);
     return this.http.post<Personne>(this._apiUrl, u);
   }
-
   checkExistPersonne(u: Personne): boolean {
-    this.getAll().subscribe(data => {this.personnes.push(...data)});
+    this.getAll().subscribe(data => {this.personnes=data});
     console.log(this.personnes)
     for (let personne of this.personnes) {
-        
         if (personne.email == u.email && personne.password == u.password) {
-          
           return true;
         }
-      }
+    }
     return false;
   }
   
