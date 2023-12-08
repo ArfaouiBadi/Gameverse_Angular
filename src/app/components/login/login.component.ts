@@ -8,10 +8,10 @@ import { PersonneService } from 'src/app/services/personne.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  personnes: Array<Personne> = []; personne: Personne = { };
+  personnes: Array<Personne> = []; 
+  personne: Personne = { };
 constructor( private router:Router,private personneService:PersonneService) { }
   ngOnInit(): void {
-    
   }  
   login(): void {
     if(this.personneService.checkExistPersonne(this.personne)){

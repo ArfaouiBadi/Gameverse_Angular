@@ -12,7 +12,8 @@ export class homeGuardGuard implements CanActivate {
     state: RouterStateSnapshot): boolean {
     if (Boolean(localStorage.getItem('isConnected'))) {
     return true;
-    } 
+    }
+    
     else {
     //this.router.navigateByUrl('/auth');
       this.router.navigate(['/login']);

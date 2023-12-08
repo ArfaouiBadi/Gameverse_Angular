@@ -22,7 +22,6 @@ export class SignupComponent {
   ngOnInit(): void {
     this.getPersonneData();
   }
-
   getPersonneData(): void {
     this.personneService.getAll().subscribe(data => {
       this.personnes = data;
