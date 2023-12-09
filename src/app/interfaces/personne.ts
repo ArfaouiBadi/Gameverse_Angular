@@ -3,6 +3,11 @@ export interface Personne {
     userName?: string ;
     email?: string ;
     password?: string ;
-    nom?: string ;
-    prenom?: string ;
+    gamesDownloaded?: Array<number>;
+    friends?: Array<number> ;
+    friendsOnline?: Array<number> ;
+    liveStreams?: Array<number> ;
+    clips?: Array<number> ;
+    photo?: string ;
+   
 }

@@ -5,4 +5,6 @@ export interface Games {
     genre?: string,
     online?: string,
     rating?: string,
+    image?: string,
+    downloads?: number,
 }

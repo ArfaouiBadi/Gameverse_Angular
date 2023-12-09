@@ -13,13 +13,17 @@ export class PersonneService {
   getAll(): Observable<Personne[]> {
     return this.http.get<Personne[]>(this._apiUrl);
   }
+  getPersonne(email:string): Observable<Personne[]> {
+    return this.http.get<Personne[]>(`${this._apiUrl}?email=${email}`);
+  }
   
   addPersonne(u: Personne): Observable<Personne> {
     return this.http.post<Personne>(this._apiUrl, u);
   }
-  checkExistPersonne(u: Personne): boolean {
+  Register(u: Personne): boolean {
+    
     this.getAll().subscribe(data => {this.personnes=data});
-    console.log(this.personnes)
+    
     for (let personne of this.personnes) {
         if (personne.email == u.email && personne.password == u.password) {
           return true;

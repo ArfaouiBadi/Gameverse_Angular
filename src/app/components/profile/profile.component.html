@@ -9,24 +9,25 @@
               <div class="main-profile ">
                 <div class="row">
                   <div class="col-lg-4">
-                    <img src="assets/images/profile.jpg" alt="" style="border-radius: 23px;">
+                    <img src={{personne[0].photo}} alt="" style="border-radius: 23px;" class="main-profile-image">
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <div class="main-info header-text">
-                      <span>Offline</span>
-                      <h4>Alan Smithee</h4>
+                        
+                      <span >Online</span>
+                      <h4>{{personne[0].userName}}</h4>
                       <p>You Haven't Gone Live yet. Go Live By Touching The Button Below.</p>
                       <div class="main-border-button">
-                        <a href="#">Start Live Stream</a>
+                        <a href="streams">Start Live Stream</a>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <ul>
-                      <li>Games Downloaded <span>3</span></li>
-                      <li>Friends Online <span>16</span></li>
-                      <li>Live Streams <span>None</span></li>
-                      <li>Clips <span>29</span></li>
+                      <li>Games Downloaded <span>{{personne[0].gamesDownloaded?.length}}</span></li>
+                      <li>Friends Online <span>{{personne[0].friendsOnline?.length}}</span></li>
+                      <li >Live Streams <span>{{personne[0].liveStreams?.length}}</span></li>
+                      <li>Clips <span>{{personne[0].clips?.length}}</span></li>
                     </ul>
                   </div>
                 </div>

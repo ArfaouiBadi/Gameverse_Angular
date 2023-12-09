@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Personne } from 'src/app/interfaces/personne';
 import { PersonneService } from 'src/app/services/personne.service';
@@ -9,19 +10,33 @@ import { PersonneService } from 'src/app/services/personne.service';
 })
 export class LoginComponent {
   personnes: Array<Personne> = []; 
-  personne: Personne = { };
-constructor( private router:Router,private personneService:PersonneService) { }
-  ngOnInit(): void {
-  }  
+  
+  personneForm = this.fb.group({
+    userName: ["", Validators.required],
+    email: ["", Validators.required],
+    password: ["", Validators.required],
+  });
+  constructor( private router:Router,private personneService:PersonneService,private fb:FormBuilder) { }
+    ngOnInit(): void {
+    }
+    erreur: boolean = false;
   login(): void {
-    if(this.personneService.checkExistPersonne(this.personne)){
-      console.log("user found");
+    if(this.personneService.Register(this.personneForm.value as Personne)){
+      this.erreur = false;
+     
       localStorage.setItem("isConnected", "true");
+      localStorage.setItem("userConnected", this.personneForm.value.email as string);
+
       this.router.navigate(['/home']);
     }
     else{
-      console.log("user not found");
+      this.erreur = true;
+      setTimeout(() => {
+        this.erreur = false;
+      }, 3000);
+      
     }
+    
   }
   }
 /*

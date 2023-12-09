@@ -22,11 +22,22 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'browse', component: BrowseComponent },
-  { path: 'details', component: DetailsComponent },
-  { path: 'streams', component: StreamsComponent },
-  
+  {
+    path: 'details',
+    component: DetailsComponent,
+    canActivate: [homeGuardGuard],
+  },
+  {
+    path: 'streams',
+    component: StreamsComponent,
+    canActivate: [homeGuardGuard],
+  },
   { path: 'Acceuil', component: AccueilComponentComponent },
-  { path: 'profile', component: ProfileComponent },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    canActivate: [homeGuardGuard],
+  },
   { path: 'form', component: FormTestComponent },
   {
     path: 'home',

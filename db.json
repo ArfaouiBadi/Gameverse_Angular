@@ -11,43 +11,96 @@
       "id": 1,
       "name": "valorant",
       "genre": "shooter",
-      "description": "valorant is a free to play 5v5, character-based tactical shooter. the game operates on an economy-round, objective-based, first-to-13 competitive format where you select a unique agent to play for the entirety of the match.",
+      "description": "Valorant is a free-to-play 5v5, character-based tactical shooter. The game operates on an economy-round, objective-based, first-to-13 competitive format where you select a unique agent to play for the entirety of the match.",
       "online": true,
-      "rating": 4.5
+      "rating": 4.5,
+      "image": "assets/images/valorant.jpg",
+      "downloads": 2.5
     },
     {
       "id": 2,
       "name": "fortnite",
-      "description": "shooter game",
-      "rating": "4.6",
       "genre": "shooter",
-      "online": "true"
+      "description": "Fortnite is a popular shooter game with a unique building mechanic. Join millions of players worldwide in epic battles and creative adventures.",
+      "online": true,
+      "rating": 4.6,
+      "image": "assets/images/fortnite.jpg",
+      "downloads": 4.5
+    },
+    {
+      "id": 3,
+      "name": "minecraft",
+      "genre": "sandbox",
+      "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. Unleash your creativity and embark on exciting adventures!",
+      "online": true,
+      "rating": 4.8,
+      "image": "assets/images/Minecraft_cover.png",
+      "downloads": 3.6
+    },
+    {
+      "id": 4,
+      "name": "league of legends",
+      "genre": "MOBA",
+      "description": "League of Legends is a fast-paced, competitive online game that combines the speed and intensity of an RTS with RPG elements. Join millions of players in the world's largest online gaming community!",
+      "online": true,
+      "rating": 4.7,
+      "image": "assets/images/lol.jpg",
+      "downloads": 2.1
+    },
+    {
+      "id": 5,
+      "name": "dota2",
+      "genre": "MOBA",
+      "description": "Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve. Join the battle and compete with players from around the world!",
+      "online": true,
+      "rating": 4.9,
+      "image": "assets/images/dota2.jpg",
+      "downloads": 7.9
+    },
+    {
+      "id": 6,
+      "name": "World of Warcraft",
+      "genre": "MMORPG",
+      "description": "World of Warcraft is a massively multiplayer online role-playing game (MMORPG) where players can explore a vast fantasy world, complete quests, and engage in epic battles.",
+      "online": true,
+      "rating": 4.8,
+      "image": "assets/images/wow.jpg",
+      "downloads": 15.2
+    },
+    {
+      "id": 7,
+      "name": "overwatch",
+      "genre": "shooter",
+      "description": "Overwatch is a team-based multiplayer first-person shooter game developed and published by Blizzard Entertainment. Join the fight and showcase your skills!",
+      "online": true,
+      "rating": 4.7,
+      "image": "assets/images/overwatch.jpg",
+      "downloads": 5.6
+    },
+    {
+      "id": 8,
+      "name": "pubg",
+      "genre": "shooter",
+      "description": "PlayerUnknown's Battlegrounds (PUBG) is a battle royale game where players fight to be the last person standing. Drop in, gear up, and survive!",
+      "online": true,
+      "rating": 4.6,
+      "image": "assets/images/pubg.jpeg",
+      "downloads": 9.2
     }
   ],
   "users": [
     {
-      "id": 1,
-      "userName": "Badi",
-      "nom": "Badi",
-      "prenom": "arfaoui",
+      "id": "14459887",
+      "userName": "ArfaouixBadi",
+      "email": "Arfaouibadi19@gmail.com",
       "password": "1234",
-      "email": "Badi@gmail.com"
-    },
-    {
-      "id": 2,
-      "userName": "Badi",
-      "nom": "Badi",
-      "prenom": "arfaoui",
-      "password": "1234",
-      "email": "arfaouibadi19@gmail.com"
-    },
-    {
-      "id": 3,
-      "userName": "3",
-      "nom": "aa",
-      "prenom": "aa",
-      "email": "aa",
-      "password": "aa"
+      "gamesDownloaded": [],
+      "friends": [],
+      "friendsOnline": "",
+      "liveStreams": [],
+      "clips": [],
+      "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg"
     }
   ]
 }
+

@@ -22,8 +22,10 @@
                       <li><a href="browse">Browse</a></li>
                       <li><a href="details">Details</a></li>
                       <li><a href="streams">Streams</a></li>
-                      <li><a href="profile">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                  </ul>   
+                      <li><a href="signup">Register</a></li>
+                      <li *ngIf="isConnected"><a href="profile">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                      <li *ngIf="!isConnected"><a href="login">Login <img src="assets/images/login.png" alt="" class="image-login"></a> </li>
+                  </ul>
                   <a class='menu-trigger'>
                       <span>Menu</span>
                   </a>
