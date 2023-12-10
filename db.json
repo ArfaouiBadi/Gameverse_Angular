@@ -210,6 +210,55 @@
           "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
         }
       ]
+    },
+    {
+      "id": "2",
+      "userName": "client",
+      "email": "client@gmail.com",
+      "password": "1234",
+      "gamesDownloaded": [],
+      "friends": [],
+      "friendsOnline": [],
+      "liveStreams": [],
+      "clips": [],
+      "Followed": [],
+      "library": [
+        {
+          "id": "2",
+          "name": "fortnite",
+          "genre": "shooter",
+          "description": "Fortnite is a popular shooter game with a unique building mechanic. Join millions of players worldwide in epic battles and creative adventures.",
+          "online": true,
+          "rating": 4.6,
+          "image": "assets/images/fortnite.jpg",
+          "downloads": 4.5,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "7",
+          "name": "overwatch",
+          "genre": "shooter",
+          "description": "Overwatch is a team-based multiplayer first-person shooter game developed and published by Blizzard Entertainment. Join the fight and showcase your skills!",
+          "online": true,
+          "rating": 4.7,
+          "image": "assets/images/overwatch.jpg",
+          "downloads": 5.6,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "8",
+          "name": "pubg",
+          "genre": "shooter",
+          "description": "PlayerUnknown's Battlegrounds (PUBG) is a battle royale game where players fight to be the last person standing. Drop in, gear up, and survive!",
+          "online": true,
+          "rating": 4.6,
+          "image": "assets/images/pubg.jpeg",
+          "downloads": 9.2,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        }
+      ],
+      "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg",
+      "downloaded":[]
     }
   ],
   "streams": [

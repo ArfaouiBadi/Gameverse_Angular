@@ -12,6 +12,33 @@
                 <div class="heading-section">
                   <h4><em>Live</em> Streams</h4>
                 </div>
+                <div class="live-stream">
+                  <div class="row">
+                    <div class="item">
+                      <div class="thumb">
+                        <img [src]="streamed[0].image" alt="" class="imagee">
+                        <div class="hover-effect">
+                          <div class="content">
+                            <div class="live">
+                              <a href="#">Live</a>
+                            </div>
+                            <ul>
+                              <li><a href="#"><i class="fa fa-eye"></i> {{ streamed[0].views }}</a></li>
+                              <li><a href="#"><i class="fa fa-gamepad"></i> {{ streamed[0].game }}</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="down-content">
+                        <div class="avatar">
+                          <img [src]="" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                        </div>
+                        <span><i class="fa fa-check"></i> {{ streamed[0].userName }}</span>
+                        <h4>{{ streamed[0].title }}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
               </div>
             </div>
@@ -49,7 +76,9 @@
               <div class="col-lg-3 col-sm-6" *ngFor="let streamer of streams">
                 <div class="item">
                   <div class="thumb">
-                    <img [src]="streamer.image" alt="">
+                    <a [routerLink]="['/streams']" [queryParams]="{ id: streamer.id }">
+                      <img src="{{ streamer.image }}" alt="">
+                    </a>
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">

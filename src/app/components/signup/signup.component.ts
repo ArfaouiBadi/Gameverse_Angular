@@ -17,9 +17,12 @@ export class SignupComponent {
     password: ["", Validators.required],
     gamesDownloaded: [[], ],
     friends: [[], ],
-    friendsOnline: ["", ],
+    friendsOnline: [[], ],
     liveStreams: [[], ],
     clips: [[], ],
+    Followed:[[],],
+    library:[[],],
+    photo: ["", ],
   });
   constructor(private fb: FormBuilder, private personneService: PersonneService,private router:Router) { }
 
@@ -34,7 +37,7 @@ export class SignupComponent {
     });
   }
   ajouterPersonne(): void {
-    
+    console.log(this.personneForm.value);
     this.personneService.addPersonne(this.personneForm.value as Personne).subscribe(data => {
       this.personnes.push(data);
     });

@@ -14,6 +14,10 @@ export class StreamsService {
   getAll(): Observable<Streams[]> {
     return this.http.get<Streams[]>(this._apiUrl);
   }
+  getStream(id: string): Observable<Streams[]> {
+    
+    return this.http.get<Streams[]>(this._apiUrl + '?id=' + id);
+  }
   addStreamer(u: Streams): Observable<Streams> {
     return this.http.post<Streams>(this._apiUrl, u);
   }

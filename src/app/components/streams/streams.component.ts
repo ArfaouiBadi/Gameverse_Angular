@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Streamers } from 'src/app/interfaces/streamers';
 import { Streams } from 'src/app/interfaces/streams';
 import { PersonneService } from 'src/app/services/personne.service';
@@ -14,7 +15,8 @@ export class StreamsComponent implements OnInit {
   streamers: Streamers[] = [];
   following = [];
   streams:Streams[]=[];
-  constructor(private sS: StreamersService, private pS: PersonneService,private streamsService:StreamsService) {}
+  streamed: Streams[] = [];
+  constructor(private sS: StreamersService, private pS: PersonneService,private streamsService:StreamsService,private route: ActivatedRoute ) {}
 
   ngOnInit(): void {
     this.pS.getPersonne(localStorage.getItem("userConnected")!).subscribe(
@@ -33,6 +35,22 @@ export class StreamsComponent implements OnInit {
     this.streamsService.getAll().subscribe((data)=>{
       this.streams=data;
     })
+
+    this.route.queryParams.subscribe((params) => {
+      const streamID = params['id'];
+      console.log(streamID);
+      if (streamID) {
+        this.streamsService.getStream(streamID).subscribe(
+          (data) => {
+            this.streamed = data;
+            console.log(this.streamed);
+          },
+          (error) => {
+            console.error(`Error fetching stream with ID ${streamID}: ${error}`);
+          }
+        );
+      }
+    });
   }
 
   

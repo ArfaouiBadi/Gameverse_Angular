@@ -12,6 +12,7 @@ export interface Personne {
     liveStreams?: Array<number> ;
     clips?: Array<Clips> ;
     photo?: string ;
-    followed?: Array<string>;
+    Followed?: Array<string>;
     library?: Array<Games>;
+    downloaded?: Array<Games>;
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Games } from 'src/app/interfaces/games';
-
 import { GamesService } from 'src/app/services/games.service';
 
 @Component({
@@ -16,7 +15,7 @@ export class DetailsComponent implements OnInit{
     
     this.route.queryParams.subscribe(params => {
       const gameName = params['name'];
-      console.log('Game Name:', gameName);
+      
       this.gameService.getGame(gameName).subscribe((data) => {
         this.game = data;
         

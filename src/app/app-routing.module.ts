@@ -46,6 +46,7 @@ const routes: Routes = [
   },
   { path: 'addGame', component: AddGameComponent },
   { path: 'modifierGame', component: ModifierGameComponent },
+  { path: 'streams/*', component: StreamsComponent },
   { path: '**', component: AccueilComponentComponent },
 ];
 

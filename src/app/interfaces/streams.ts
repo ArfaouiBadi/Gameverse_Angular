@@ -5,5 +5,4 @@ export interface Streams {
     views?:number;
     game?:string;
     image?:string;
-
 }
