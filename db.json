@@ -159,59 +159,6 @@
   ],
   "users": [
     {
-      "id": 14459887,
-      "userName": "ArfaouixBadi",
-      "email": "Arfaouibadi19@gmail.com",
-      "password": "1234",
-      "gamesDownloaded": [],
-      "friends": [],
-      "friendsOnline": [],
-      "liveStreams": [],
-      "clips": [
-        "3"
-      ],
-      "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg",
-      "followed": [
-        "1",
-        "3"
-      ],
-      "library": [
-        {
-          "id": "1",
-          "name": "valorant",
-          "genre": "shooter",
-          "description": "Valorant is a free-to-play 5v5, character-based tactical shooter. The game operates on an economy-round, objective-based, first-to-13 competitive format where you select a unique agent to play for the entirety of the match.",
-          "online": true,
-          "rating": 4.5,
-          "image": "assets/images/valorant.jpg",
-          "downloads": 2.5,
-          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
-        },
-        {
-          "id": "4",
-          "name": "league of legends",
-          "genre": "MOBA",
-          "description": "League of Legends is a fast-paced, competitive online game that combines the speed and intensity of an RTS with RPG elements. Join millions of players in the world's largest online gaming community!",
-          "online": true,
-          "rating": 4.7,
-          "image": "assets/images/lol.jpg",
-          "downloads": 2.1,
-          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
-        },
-        {
-          "id": "8",
-          "name": "pubg",
-          "genre": "shooter",
-          "description": "PlayerUnknown's Battlegrounds (PUBG) is a battle royale game where players fight to be the last person standing. Drop in, gear up, and survive!",
-          "online": true,
-          "rating": 4.6,
-          "image": "assets/images/pubg.jpeg",
-          "downloads": 9.2,
-          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
-        }
-      ]
-    },
-    {
       "id": "2",
       "userName": "client",
       "email": "client@gmail.com",
@@ -234,7 +181,19 @@
           "userName": "ArfaouixBadi"
         }
       ],
-      "Followed": [],
+      "Followed": [
+        {
+          "id": 2,
+          "name": "Shroud",
+          "bio": "Former professional CS:GO player, now a variety streamer",
+          "category": "Gaming",
+          "verified": true,
+          "followers": 800000,
+          "image": "assets/images/avatar-02.jpg",
+          "age": 28,
+          "email": "shroud@example.com"
+        }
+      ],
       "library": [
         {
           "id": "2",
@@ -282,7 +241,89 @@
         }
       ],
       "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg",
-      "downloaded": []
+      "downloaded": [
+        {
+          "id": "8",
+          "name": "pubg",
+          "genre": "shooter",
+          "description": "PlayerUnknown's Battlegrounds (PUBG) is a battle royale game where players fight to be the last person standing. Drop in, gear up, and survive!",
+          "online": true,
+          "rating": 4.6,
+          "image": "assets/images/pubg.jpeg",
+          "downloads": 9.2,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "2",
+          "name": "fortnite",
+          "genre": "shooter",
+          "description": "Fortnite is a popular shooter game with a unique building mechanic. Join millions of players worldwide in epic battles and creative adventures.",
+          "online": true,
+          "rating": 4.6,
+          "image": "assets/images/fortnite.jpg",
+          "downloads": 4.5,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "6",
+          "name": "World of Warcraft",
+          "genre": "MMORPG",
+          "description": "World of Warcraft is a massively multiplayer online role-playing game (MMORPG) where players can explore a vast fantasy world, complete quests, and engage in epic battles.",
+          "online": true,
+          "rating": 4.8,
+          "image": "assets/images/wow.jpg",
+          "downloads": 15.2,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        }
+      ]
+    },
+    {
+      "id": "14459887",
+      "userName": "ArfaouixBadi",
+      "email": "Arfaouibadi19@gmail.com",
+      "password": "1234",
+      "downloaded": [],
+      "friends": [],
+      "friendsOnline": [],
+      "liveStreams": [],
+      "clips": [],
+      "Followed": [],
+      "library": [
+        {
+          "id": "2",
+          "name": "fortnite",
+          "genre": "shooter",
+          "description": "Fortnite is a popular shooter game with a unique building mechanic. Join millions of players worldwide in epic battles and creative adventures.",
+          "online": true,
+          "rating": 4.6,
+          "image": "assets/images/fortnite.jpg",
+          "downloads": 4.5,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "3",
+          "name": "minecraft",
+          "genre": "sandbox",
+          "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. Unleash your creativity and embark on exciting adventures!",
+          "online": true,
+          "rating": 4.8,
+          "image": "assets/images/Minecraft_cover.png",
+          "downloads": 3.6,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "4",
+          "name": "league of legends",
+          "genre": "MOBA",
+          "description": "League of Legends is a fast-paced, competitive online game that combines the speed and intensity of an RTS with RPG elements. Join millions of players in the world's largest online gaming community!",
+          "online": true,
+          "rating": 4.7,
+          "image": "assets/images/lol.jpg",
+          "downloads": 2.1,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        }
+      ],
+      "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg"
     }
   ],
   "streams": [
@@ -389,6 +430,54 @@
       "image": "https://i.ibb.co/z81nqTC/vod-1651860183-offset-15266-preview-480x272.jpg",
       "userName": "ArfaouixBadi",
       "email": "Arfaouibadi19@gmail.com"
+    },
+    {
+      "id": "yticxTp",
+      "title": "",
+      "description": "",
+      "game": "",
+      "views": "",
+      "likes": "",
+      "dislikes": "",
+      "video": "",
+      "image": "",
+      "userName": ""
+    },
+    {
+      "id": "IKSuCvu",
+      "title": "",
+      "description": "",
+      "game": "",
+      "views": "",
+      "likes": "",
+      "dislikes": "",
+      "video": "",
+      "image": "",
+      "userName": ""
+    },
+    {
+      "id": "VneUCi1",
+      "title": "",
+      "description": "",
+      "game": "",
+      "views": "",
+      "likes": "",
+      "dislikes": "",
+      "video": "",
+      "image": "",
+      "userName": ""
+    },
+    {
+      "id": "10eX4_o",
+      "title": "",
+      "description": "",
+      "game": "",
+      "views": "",
+      "likes": "",
+      "dislikes": "",
+      "video": "",
+      "image": "",
+      "userName": ""
     }
   ]
 }

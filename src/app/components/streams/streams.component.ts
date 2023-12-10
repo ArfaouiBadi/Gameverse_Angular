@@ -21,8 +21,9 @@ export class StreamsComponent implements OnInit {
   ngOnInit(): void {
     this.pS.getPersonne(localStorage.getItem("userConnected")!).subscribe(
       (data: any) => {
-        this.following = data.map((personne: any) => personne.followed);
-        this.following=this.following[0];
+        
+        this.following = data[0].Followed;
+        
       },
       (error) => {
         console.log(error);
@@ -52,6 +53,26 @@ export class StreamsComponent implements OnInit {
       }
     });
   }
+
+
+  handleaddFollow(streamer: Streamers) {
+    
+    const following: Streamers[] = this.following;
+    
+    following.push(streamer);
+    this.pS.getPersonne(localStorage.getItem("userConnected")!).subscribe(
+      (data: any) => {
+        data[0].Followed = following;
+        this.pS.updatePersonne(data[0]).subscribe();
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+
+
+  }
+
 
   
 }

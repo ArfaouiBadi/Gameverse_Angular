@@ -15,7 +15,7 @@ export class SignupComponent {
     userName: ["", Validators.required],
     email: ["", Validators.required],
     password: ["", Validators.required],
-    gamesDownloaded: [[], ],
+    downloaded: [[], ],
     friends: [[], ],
     friendsOnline: [[], ],
     liveStreams: [[], ],

@@ -28,11 +28,11 @@
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <ul>
-                      <li>Games Downloaded <span *ngIf="personne[0]?.gamesDownloaded">{{personne[0].gamesDownloaded?.length}}</span></li>
+                      <li>Games Downloaded <span *ngIf="personne[0]?.downloaded">{{personne[0].downloaded?.length}}</span></li>
                       <li>Friends Online <span *ngIf="personne[0]?.friendsOnline">{{personne[0].friendsOnline?.length}}</span></li>
                       <li >Live Streams <span *ngIf="personne[0]?.liveStreams">{{personne[0].liveStreams?.length}}</span></li>
                       <li>Clips <span *ngIf="personne[0]?.clips">{{personne[0].clips?.length}}</span></li>
-                      <li>Followed <span *ngIf="personne[0].Followed">{{personne[0].Followed.length}}</span></li>
+                      <li>Following <span *ngIf="personne[0].Followed">{{personne[0].Followed.length}}</span></li>
                       <li>Games In Library<span *ngIf="personne[0].library">{{personne[0].library.length}}</span></li>
                     </ul>
                   </div>
@@ -93,8 +93,49 @@
                   <li><h4>{{item.name}}</h4><span>{{item.genre}}</span></li>
                   <li><h4>Date Added</h4><span>21/04/2022</span></li>
                   <li><h4>Hours Played</h4><span>0 H 0 Mins</span></li>
-                  <li><button type="button" class="bttn" (click)="handleRemoveFromLibrary(item)">Remove From Library</button><div class="main-border-button border-active"><a href="#">Donwload</a></div></li>
+                  <li class="aligeitems"><button type="button" class="bttn" (click)="handleRemoveFromLibrary(item)">Remove From Library</button>
+                    <button type="button" class="bttn" (click)="handeladdGameToDownloaded(item)">Donwload</button>
+                    <div class="main-border-button border-active"></div></li>
                   
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="gaming-library profile-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Your Downloaded</em> Games</h4>
+              </div>
+             
+              <div class="item last-item" *ngFor="let item of personne[0].downloaded">
+                <ul>
+                  <li><img src={{item.image}} alt="" class="templatemo-item image-library"></li>
+                  <li><h4>{{item.name}}</h4><span>{{item.genre}}</span></li>
+                  <li><h4>Date Added</h4><span>21/04/2022</span></li>
+                  <li><h4>Hours Played</h4><span>0 H 0 Mins</span></li>
+                  <li><button type="button" class="bttn" (click)="handleRemoveFromDownloads(item)">Remove From Downloads</button><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="gaming-library profile-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Follow</em>ing</h4>
+              </div>
+             
+              <div class="item last-item" *ngFor="let streamer of following">
+                <ul>
+                  <li><img src={{streamer.image}} alt="" class="templatemo-item image-library"></li>
+                  <li><h4>{{streamer.name}}</h4><span *ngIf="streamer.verified"><i class="fa fa-check"></i></span>
+                    <span *ngIf="!streamer.verified">Unverified</span>
+                  </li>
+                  <li><h4>Date Follow</h4><span>21/04/2022</span></li>
+                  <li><h4>Hours Watched</h4><span>0 H 0 Mins</span></li>
+                  <li><button type="button" class="bttn" (click)="handleUnfollow(streamer)">Unfollow</button></li>
                 </ul>
               </div>
             </div>
