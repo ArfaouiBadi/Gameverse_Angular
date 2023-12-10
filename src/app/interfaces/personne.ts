@@ -1,3 +1,6 @@
+import { Clips } from "./clips";
+import { Games } from "./games";
+
 export interface Personne {
     id?: number ;
     userName?: string ;
@@ -7,7 +10,8 @@ export interface Personne {
     friends?: Array<number> ;
     friendsOnline?: Array<number> ;
     liveStreams?: Array<number> ;
-    clips?: Array<number> ;
+    clips?: Array<Clips> ;
     photo?: string ;
-   
+    followed?: Array<string>;
+    library?: Array<Games>;
 }

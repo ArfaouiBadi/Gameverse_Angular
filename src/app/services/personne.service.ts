@@ -31,5 +31,18 @@ export class PersonneService {
     }
     return false;
   }
+  updatePersonne(u: Personne): Observable<Personne> {
+    return this.http.put<Personne>(this._apiUrl + '/' + u.id, u);
+  }
+
+  addToLibrary(email: string, game: any): void {
+    const personne = this.http.get<Personne[]>(`${this._apiUrl}?email=${email}`);
+
+    personne.subscribe(data => {
+      console.log(data);
+      data[0].library?.push(game);
+      this.http.put<Personne>(`${this._apiUrl}/${data[0].id}`, data[0]).subscribe();
+    });
+  }
   
 }

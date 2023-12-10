@@ -1,5 +1,5 @@
 export interface Games {
-    id?: number,
+    id?: string,
     name?: string,
     description?: string,
     genre?: string,
@@ -7,4 +7,6 @@ export interface Games {
     rating?: string,
     image?: string,
     downloads?: number,
+    email?: string,
+    video?: string,
 }

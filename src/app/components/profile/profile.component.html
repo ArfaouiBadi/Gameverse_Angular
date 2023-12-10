@@ -9,25 +9,31 @@
               <div class="main-profile ">
                 <div class="row">
                   <div class="col-lg-4">
-                    <img src={{personne[0].photo}} alt="" style="border-radius: 23px;" class="main-profile-image">
+                    <img *ngIf="personne[0]?.photo" [src]="personne[0].photo" alt="" style="border-radius: 23px;" class="main-profile-image">
+
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <div class="main-info header-text">
                         
                       <span >Online</span>
-                      <h4>{{personne[0].userName}}</h4>
+                      <h4 *ngIf="personne[0]?.userName">{{personne[0].userName}}</h4>
                       <p>You Haven't Gone Live yet. Go Live By Touching The Button Below.</p>
                       <div class="main-border-button">
                         <a href="streams">Start Live Stream</a>
+                      </div>
+                      <div class="main-border-button">
+                        <a href="login" (click)="handleLogout()">Logout</a>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <ul>
-                      <li>Games Downloaded <span>{{personne[0].gamesDownloaded?.length}}</span></li>
-                      <li>Friends Online <span>{{personne[0].friendsOnline?.length}}</span></li>
-                      <li >Live Streams <span>{{personne[0].liveStreams?.length}}</span></li>
-                      <li>Clips <span>{{personne[0].clips?.length}}</span></li>
+                      <li>Games Downloaded <span *ngIf="personne[0]?.gamesDownloaded">{{personne[0].gamesDownloaded?.length}}</span></li>
+                      <li>Friends Online <span *ngIf="personne[0]?.friendsOnline">{{personne[0].friendsOnline?.length}}</span></li>
+                      <li >Live Streams <span *ngIf="personne[0]?.liveStreams">{{personne[0].liveStreams?.length}}</span></li>
+                      <li>Clips <span *ngIf="personne[0]?.clips">{{personne[0].clips?.length}}</span></li>
+                      <li>Followed <span *ngIf="personne[0].followed">{{personne[0].followed.length}}</span></li>
+                      <li>Games In Library<span *ngIf="personne[0].library">{{personne[0].library.length}}</span></li>
                     </ul>
                   </div>
                 </div>
@@ -40,52 +46,18 @@
                             <h4><em>Your Most Popular</em> Clips</h4>
                           </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" *ngFor="let clip of clips">
                           <div class="item">
                             <div class="thumb">
-                              <img src="assets/images/clip-01.jpg" alt="" style="border-radius: 23px;">
-                              <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank"><i class="fa fa-play"></i></a>
+                              <img src={{clip.image}} alt="" style="border-radius: 23px;">
+                              <a href={{clip.video}} target="_blank"><i class="fa fa-play"></i></a>
                             </div>
                             <div class="down-content">
-                              <h4>First Clip</h4>
-                              <span><i class="fa fa-eye"></i> 250</span>
+                              <h4>{{clip.title}}</h4>
+                              <span><i class="fa fa-eye"></i> {{clip.views}}</span>
                             </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                          <div class="item">
-                            <div class="thumb">
-                              <img src="assets/images/clip-02.jpg" alt="" style="border-radius: 23px;">
-                              <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank"><i class="fa fa-play"></i></a>
-                            </div>
-                            <div class="down-content">
-                              <h4>Second Clip</h4>
-                              <span><i class="fa fa-eye"></i> 183</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                          <div class="item">
-                            <div class="thumb">
-                              <img src="assets/images/clip-03.jpg" alt="" style="border-radius: 23px;">
-                              <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank"><i class="fa fa-play"></i></a>
-                            </div>
-                            <div class="down-content">
-                              <h4>Third Clip</h4>
-                              <span><i class="fa fa-eye"></i> 141</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                          <div class="item">
-                            <div class="thumb">
-                              <img src="assets/images/clip-04.jpg" alt="" style="border-radius: 23px;">
-                              <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank"><i class="fa fa-play"></i></a>
-                            </div>
-                            <div class="down-content">
-                              <h4>Fourth Clip</h4>
-                              <span><i class="fa fa-eye"></i> 91</span>
-                            </div>
+                            <a href="#">Like</a><br>
+                            <a href="#">Dislike</a>
                           </div>
                         </div>
                         <div class="col-lg-12">
@@ -108,34 +80,15 @@
               <div class="heading-section">
                 <h4><em>Your Gaming</em> Library</h4>
               </div>
-              <div class="item">
+             
+              <div class="item last-item" *ngFor="let item of personne[0].library">
                 <ul>
-                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>745 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
+                  <li><img src={{item.image}} alt="" class="templatemo-item image-library"></li>
+                  <li><h4>{{item.name}}</h4><span>{{item.genre}}</span></li>
                   <li><h4>Date Added</h4><span>21/04/2022</span></li>
-                  <li><h4>Hours Played</h4><span>632 H 46 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                  <li><h4>Hours Played</h4><span>0 H 0 Mins</span></li>
+                  <li><button type="button" class="bttn" (click)="handleRemoveFromLibrary(item)">Remove From Library</button><div class="main-border-button border-active"><a href="#">Donwload</a></div></li>
+                  
                 </ul>
               </div>
             </div>

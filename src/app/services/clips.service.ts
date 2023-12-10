@@ -12,6 +12,10 @@ export class ClipsService {
   getAll(): Observable<Clips[]> {
     return this.http.get<Clips[]>(this._apiUrl);
   }
+  getClips(userName:string): Observable<Clips[]> {
+    
+    return this.http.get<Clips[]>(`${this._apiUrl}?email=${userName}`);
+  }
   addClip(g: Clips): Observable<Clips> {
     return this.http.post<Clips>(this._apiUrl, g);
   }

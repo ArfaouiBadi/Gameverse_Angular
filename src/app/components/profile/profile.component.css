@@ -2,3 +2,24 @@
     object-fit: cover;
     aspect-ratio: 1/1.2;
 }
+.bttn{
+    font-size: 10px;
+    color: #ec6090;
+    background-color: transparent;
+    border: 1px solid #ec6090;
+    padding: 12px 30px;
+    
+    border-radius: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+    transition: all .3s;
+    
+    
+}
+
+.bttn:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #e75e8d;
+  }

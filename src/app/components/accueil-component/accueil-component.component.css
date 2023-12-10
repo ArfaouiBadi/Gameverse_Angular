@@ -9,3 +9,29 @@
     max-width:max-content;
     
 }
+.action-button{
+    font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 5px 13px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.action-button:hover {
+    background-color: #fff;
+    color: #e75e8d;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}

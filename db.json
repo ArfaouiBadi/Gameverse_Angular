@@ -1,120 +1,321 @@
 {
-  "posts": [
+  "streamers": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Ninja",
+      "bio": "Professional gamer and streamer",
+      "category": "Gaming",
+      "verified": true,
+      "followers": 1000000,
+      "image": "assets/images/avatar-01.jpg",
+      "age": 30,
+      "email": "ninja@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Shroud",
+      "bio": "Former professional CS:GO player, now a variety streamer",
+      "category": "Gaming",
+      "verified": true,
+      "followers": 800000,
+      "image": "assets/images/avatar-02.jpg",
+      "age": 28,
+      "email": "shroud@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Drlupo",
+      "bio": "Variety streamer and content creator",
+      "category": "Gaming",
+      "verified": true,
+      "followers": 500000,
+      "image": "assets/images/avatar-03.jpg",
+      "age": 32,
+      "email": "drlupo@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Asmongold",
+      "bio": "World of Warcraft streamer and content creator",
+      "category": "Gaming",
+      "verified": true,
+      "followers": 700000,
+      "image": "assets/images/avatar-04.jpg",
+      "age": 29,
+      "email": "asmongold@example.com"
+    },
+    {
+      "id": 5,
+      "name": "MrBeast",
+      "bio": "Philanthropist and content creator",
+      "category": "Entertainment",
+      "verified": true,
+      "followers": 12000000,
+      "image": "",
+      "age": 23,
+      "email": "mrbeast@example.com"
+    },
+    {
+      "id": 6,
+      "name": "PewDiePie",
+      "bio": "YouTuber and content creator",
+      "category": "Entertainment",
+      "verified": true,
+      "followers": 110000000,
+      "image": "",
+      "age": 32,
+      "email": "pewdiepie@example.com"
     }
   ],
   "games": [
     {
-      "id": 1,
+      "id": "1",
       "name": "valorant",
       "genre": "shooter",
       "description": "Valorant is a free-to-play 5v5, character-based tactical shooter. The game operates on an economy-round, objective-based, first-to-13 competitive format where you select a unique agent to play for the entirety of the match.",
       "online": true,
       "rating": 4.5,
       "image": "assets/images/valorant.jpg",
-      "downloads": 2.5
+      "downloads": 2.5,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "fortnite",
       "genre": "shooter",
       "description": "Fortnite is a popular shooter game with a unique building mechanic. Join millions of players worldwide in epic battles and creative adventures.",
       "online": true,
       "rating": 4.6,
       "image": "assets/images/fortnite.jpg",
-      "downloads": 4.5
+      "downloads": 4.5,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "minecraft",
       "genre": "sandbox",
       "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. Unleash your creativity and embark on exciting adventures!",
       "online": true,
       "rating": 4.8,
       "image": "assets/images/Minecraft_cover.png",
-      "downloads": 3.6
+      "downloads": 3.6,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "league of legends",
       "genre": "MOBA",
       "description": "League of Legends is a fast-paced, competitive online game that combines the speed and intensity of an RTS with RPG elements. Join millions of players in the world's largest online gaming community!",
       "online": true,
       "rating": 4.7,
       "image": "assets/images/lol.jpg",
-      "downloads": 2.1
+      "downloads": 2.1,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "dota2",
       "genre": "MOBA",
       "description": "Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve. Join the battle and compete with players from around the world!",
       "online": true,
       "rating": 4.9,
       "image": "assets/images/dota2.jpg",
-      "downloads": 7.9
+      "downloads": 7.9,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "World of Warcraft",
       "genre": "MMORPG",
       "description": "World of Warcraft is a massively multiplayer online role-playing game (MMORPG) where players can explore a vast fantasy world, complete quests, and engage in epic battles.",
       "online": true,
       "rating": 4.8,
       "image": "assets/images/wow.jpg",
-      "downloads": 15.2
+      "downloads": 15.2,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "overwatch",
       "genre": "shooter",
       "description": "Overwatch is a team-based multiplayer first-person shooter game developed and published by Blizzard Entertainment. Join the fight and showcase your skills!",
       "online": true,
       "rating": 4.7,
       "image": "assets/images/overwatch.jpg",
-      "downloads": 5.6
+      "downloads": 5.6,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "pubg",
       "genre": "shooter",
       "description": "PlayerUnknown's Battlegrounds (PUBG) is a battle royale game where players fight to be the last person standing. Drop in, gear up, and survive!",
       "online": true,
       "rating": 4.6,
       "image": "assets/images/pubg.jpeg",
-      "downloads": 9.2
+      "downloads": 9.2,
+      "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
     }
   ],
   "users": [
     {
-      "id": "14459887",
+      "id": 14459887,
       "userName": "ArfaouixBadi",
       "email": "Arfaouibadi19@gmail.com",
       "password": "1234",
       "gamesDownloaded": [],
       "friends": [],
-      "friendsOnline": "",
+      "friendsOnline": [],
       "liveStreams": [],
-      "clips": [],
-      "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg"
+      "clips": [
+        "3"
+      ],
+      "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg",
+      "followed": [
+        "1",
+        "3"
+      ],
+      "library": [
+        {
+          "id": "1",
+          "name": "valorant",
+          "genre": "shooter",
+          "description": "Valorant is a free-to-play 5v5, character-based tactical shooter. The game operates on an economy-round, objective-based, first-to-13 competitive format where you select a unique agent to play for the entirety of the match.",
+          "online": true,
+          "rating": 4.5,
+          "image": "assets/images/valorant.jpg",
+          "downloads": 2.5,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "4",
+          "name": "league of legends",
+          "genre": "MOBA",
+          "description": "League of Legends is a fast-paced, competitive online game that combines the speed and intensity of an RTS with RPG elements. Join millions of players in the world's largest online gaming community!",
+          "online": true,
+          "rating": 4.7,
+          "image": "assets/images/lol.jpg",
+          "downloads": 2.1,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "8",
+          "name": "pubg",
+          "genre": "shooter",
+          "description": "PlayerUnknown's Battlegrounds (PUBG) is a battle royale game where players fight to be the last person standing. Drop in, gear up, and survive!",
+          "online": true,
+          "rating": 4.6,
+          "image": "assets/images/pubg.jpeg",
+          "downloads": 9.2,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "1",
+      "title": "Just Talking With Fans",
+      "userName": "Amouranth",
+      "views": 1200,
+      "game": "Just Chatting",
+      "image": "assets/images/stream-01.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Just Talking With Fans",
+      "userName": "Shroud",
+      "views": 1200,
+      "game": "CS-GO",
+      "image": "assets/images/stream-02.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Fornite 36 Hours Live Stream",
+      "userName": "Ninja",
+      "views": 1200,
+      "game": "Fortnite",
+      "image": "assets/images/stream-03.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Maybe Nathej Allnight Chillin'",
+      "userName": "Areluwa",
+      "views": 1200,
+      "game": "CS-GO",
+      "image": "assets/images/stream-04.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Live Streaming Till Morning",
+      "userName": "NewGangTeam",
+      "views": 1200,
+      "game": "CS-GO",
+      "image": "assets/images/stream-05.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Just Talking With Fans",
+      "userName": "Kengan Omeg",
+      "views": 1200,
+      "game": "CS-GO",
+      "image": "assets/images/stream-06.jpg"
+    },
+    {
+      "id": "7",
+      "title": "CS-GO 36 Hours Live Stream",
+      "userName": "LahutaMalc",
+      "views": 1200,
+      "game": "CS-GO",
+      "image": "assets/images/stream-07.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Maybe Nathej Allnight Chillin'",
+      "userName": "Areluwa",
+      "views": 1200,
+      "game": "CS-GO",
+      "image": "assets/images/stream-08.jpg"
     }
   ],
   "clips": [
     {
-      "id": "14459887",
+      "id": "1",
+      "title": "Awesome Clip 1",
+      "description": "This is the first awesome clip",
+      "game": "Fortnite",
+      "views": 1000,
+      "likes": 500,
+      "dislikes": 20,
+      "video": "https://example.com/videos/clip1.mp4",
+      "image": "https://example.com/images/clip1.jpg",
       "userName": "ArfaouixBadi",
-      "email": "Arfaouibadi19@gmail.com",
-      "password": "1234",
-      "gamesDownloaded": [],
-      "friends": [],
-      "friendsOnline": "",
-      "liveStreams": [],
-      "clips": [],
-      "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg"
+      "email": "Arfaouibadi19@gmail.com"
+    },
+    {
+      "id": "2",
+      "title": "Epic Moment",
+      "description": "An epic gaming moment captured on video",
+      "game": "Apex Legends",
+      "views": 800,
+      "likes": 300,
+      "dislikes": 10,
+      "video": "https://example.com/videos/clip2.mp4",
+      "image": "https://example.com/images/clip2.jpg",
+      "userName": "ArfaouixBadi"
+    },
+    {
+      "id": "3",
+      "title": "Funny Clip",
+      "description": "A hilarious gaming moment",
+      "game": "Minecraft",
+      "views": 1200,
+      "likes": 700,
+      "dislikes": 30,
+      "video": "https://example.com/videos/clip3.mp4",
+      "image": "https://i.ibb.co/z81nqTC/vod-1651860183-offset-15266-preview-480x272.jpg",
+      "userName": "ArfaouixBadi",
+      "email": "Arfaouibadi19@gmail.com"
     }
   ]
 }
-
