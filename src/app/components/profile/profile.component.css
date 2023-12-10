@@ -23,3 +23,64 @@
     background-color: #fff;
     color: #e75e8d;
   }
+
+  .noclips{
+    font-size: 10px;
+    color: #ec6090;
+    background-color: transparent;
+    border: 1px solid #ec6090;
+    padding: 12px 30px;
+     align-items: center;
+    border-radius: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 50px auto;
+    
+    transition: all .3s;
+  }
+  .noclips:hover{
+    border-color: #fff;
+    color: #fff;
+  }
+  .modal-content    {
+    background-color: #27292a;
+  }
+  .formme{
+    background-color: #27292a;
+    color: #fff;
+  }
+  .formme input,textarea{
+    background-color: #1f2122;
+    height: 46px;
+    border-radius: 23px;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    padding: 0px 15px 0px 45px;
+  }
+  .moreButton{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .moreButton button{
+    font-size: 15px;
+    color: #ec6090;
+    background-color: transparent;
+    border: 1px solid #ec6090;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+    transition: all .3s;
+  }
+  .moreButton button:hover{
+    border-color: #fff;
+    background-color: #fff;
+    color: #e75e8d;
+  }

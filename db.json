@@ -220,7 +220,20 @@
       "friends": [],
       "friendsOnline": [],
       "liveStreams": [],
-      "clips": [],
+      "clips": [
+        {
+          "id": "12",
+          "title": "360 No Scope",
+          "description": "best no scope u will ever seen",
+          "game": "Overwatch",
+          "views": 0,
+          "likes": "",
+          "dislikes": "",
+          "video": "",
+          "image": "",
+          "userName": "ArfaouixBadi"
+        }
+      ],
       "Followed": [],
       "library": [
         {
@@ -255,10 +268,21 @@
           "image": "assets/images/pubg.jpeg",
           "downloads": 9.2,
           "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
+        },
+        {
+          "id": "2",
+          "name": "fortnite",
+          "genre": "shooter",
+          "description": "Fortnite is a popular shooter game with a unique building mechanic. Join millions of players worldwide in epic battles and creative adventures.",
+          "online": true,
+          "rating": 4.6,
+          "image": "assets/images/fortnite.jpg",
+          "downloads": 4.5,
+          "video": "https://www.youtube.com/embed/9q2N2Zm1dp8"
         }
       ],
       "photo": "https://i.ibb.co/wKb68Ps/083a9c73-7df1-449c-9ef3-5f6a9712bd42.jpg",
-      "downloaded":[]
+      "downloaded": []
     }
   ],
   "streams": [

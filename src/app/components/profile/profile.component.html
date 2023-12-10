@@ -46,6 +46,7 @@
                             <h4><em>Your Most Popular</em> Clips</h4>
                           </div>
                         </div>
+                        <div class="col-lg-3 col-sm-6" *ngIf="clips.length==0" class="noclips " >you didnt make any clips yet !<a href="" data-bs-toggle="modal" data-bs-target="#addClipModal" ><u>add clip ?</u></a></div>
                         <div class="col-lg-3 col-sm-6" *ngFor="let clip of clips">
                           <div class="item">
                             <div class="thumb">
@@ -56,12 +57,17 @@
                               <h4>{{clip.title}}</h4>
                               <span><i class="fa fa-eye"></i> {{clip.views}}</span>
                             </div>
-                            <a href="#">Like</a><br>
-                            <a href="#">Dislike</a>
+                            <div class="moreButton">
+                              <button type="button">Like</button>
+                              <button type="button">Dislike</button>
+                              <button type="button" (click)="deleteClip(clip)">Delete Clip</button>
+                              
+                            </div>
                           </div>
                         </div>
                         <div class="col-lg-12">
                           <div class="main-button">
+                            <a *ngIf="clips.length>0" href="" data-bs-toggle="modal" data-bs-target="#addClipModal" ><u>add clip ?</u></a>
                             <a href="#">Load More Clips</a>
                           </div>
                         </div>
@@ -98,3 +104,61 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Bootstrap Modal -->
+<div class="modal fade" id="addClipModal" tabindex="-1" aria-labelledby="addClipModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal content goes here -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="addClipModalLabel"><u>Add Clip</u></h5>
+        <button type="button" class="bttn" data-bs-dismiss="modal" aria-label="Close">X</button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your form or content for adding a clip here -->
+        <form [formGroup]="addClipForm" class="formme">
+          <table>
+            <tr>
+              <td><label for="id">ID</label></td>
+              <td><input type="text" id="id" formControlName="id"></td>
+            </tr>
+            <tr>
+              <td><label for="title">Title</label></td>
+              <td><input type="text" id="title" formControlName="title"></td>
+            </tr>
+            <tr>
+              <td><label for="description">Description</label></td>
+              <td><textarea id="description" formControlName="description"></textarea></td>
+            </tr>
+            <tr>
+              <td><label for="game">Game</label></td>
+              <td><input type="text" id="game" formControlName="game"></td>
+            </tr>
+            <tr>
+              <td><label for="views">Views</label></td>
+              <td><input type="number" id="views" formControlName="views"></td>
+            </tr>
+            
+            <tr>
+              <td><label for="video">Video</label></td>
+              <td><input type="text" id="video" formControlName="video"></td>
+            </tr>
+            <tr>
+              <td><label for="image">Image</label></td>
+              <td><input type="text" id="image" formControlName="image"></td>
+            </tr>
+            <tr>
+              <td><label for="userName">User Name</label></td>
+              <td><input type="text" id="userName" formControlName="userName"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="bttn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="bttn" (click)="addClip()">Add Clip</button>
+      </div>
+    </div>
+  </div>
+</div>
